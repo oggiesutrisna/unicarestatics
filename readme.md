@@ -14,5 +14,7 @@ this project is using template called medilab, thanks guys for the chance to use
 
 you can absolutely fork this project, because its open source. 
 
-Regards
+template is using from medilab, shoutout to the bootstrapmade.com to made this awesome template. 
+
+Regards <br>
 Oggie Sutrisna.- 
