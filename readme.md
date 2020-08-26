@@ -1,6 +1,6 @@
-<h2> Unicare 2.0 Static Website </h2>
+# Unicare 2.0 Static Website Project
 
-<h1> Created by myself, just me. Yep. </h1>
+# Created by myself, just me. Yep.
 
 This static website is using bootstrap 5 (alpha) and using more php static that i've been set to the offline. No database needed just an pop up. 
 
