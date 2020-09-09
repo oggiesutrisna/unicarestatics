@@ -16,6 +16,11 @@
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
+  <!-- leaflet js for mapping -->
+  <!-- offline for not using cdn -->
+  <link rel="stylesheet" href="/path/to/leaflet.css" />
+<script src="/path/to/leaflet.js"></script>
+
   <!-- Vendor CSS Files -->
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -50,6 +55,7 @@
   <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- end of font awesome -->
 
+
 </head>
 
 <body>
@@ -60,27 +66,41 @@
       <div class="contact-info mr-auto">
         <i class="icofont-envelope"></i> <a href="mailto:contact@example.com">unicareclinic@gmail.com</a>
         <i class="icofont-phone"></i><a data-target="#exampleModal" data-toggle="modal" class="modal-fade" id="#exampleModal" href="#exampleModal">Whatsapp! Us </a>
-        <i class="icofont-google-map"></i> Unicare Clinic Ubud & Unicare Clinic Uluwatu
+        <i class="icofont-google-map"> <a data-toggle="modal" id="#google-maps" data-target="#google-maps" class="modal-fade" href="#google-maps" ></i> Unicare Clinic Ubud & Unicare Clinic Uluwatu </a>
       </div>
+
+      <!-- modal for google maps -->
+      <div class="modal fade" id="google-maps" tabindex="-1" aria-labelledby="googlemapsModal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+
+            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1cLP3b6b7tyNc1RobqkIH55DwDwps2h_k" width="640" height="480"></iframe>
+          </div>
+          </div>
+        </div>
+      </div> 
 
       <!-- modal for youtube -->
       <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Select the Unicare clinic near you to contact easily.</h5>
+              <h5 class="modal-title" id="exampleModalLabel">Select the Unicare clinic near you to contact easily. </h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
             <div class="modal-body">
+              <h7>Note: make sure that it's located near by your house</h7>
+              <hr>
               <h5><a href="http://web.whatsapp.com/send?phone=082288880911"> Unicare Uluwatu </h5></a>
               <hr>
               <h5><a href="http://web.whatsapp.com/send?phone=088228883911"> Unicare Ubud </a></h5>
+              <hr>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
             </div>
           </div>
         </div>
@@ -170,7 +190,7 @@
                 Unicare is your 24hour ready response medical care expert in Bali. We ensure you can enjoy every kind of travelling experience, free from dengue and rabies, healthy, energized, dental and beauty enhanced, and beyond. Trained Staff. Services: 24/7 On call Doctor, Rabies Vaccine & Immunoglobulin, IV Vitamin, Emergency Treatment, Dental Clinic.
               </p>
               <div class="text-center">
-                <a href="#" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a>
+                <a href="#appointment" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a>
               </div>
             </div>
           </div>
@@ -469,9 +489,9 @@
             <div class="col-md-4 form-group">
               <select name="doctor" id="doctor" class="form-control">
                 <option value="">Select Doctor</option>
-                <option value="Doctor 1">Doctor Zakki</option>
-                <option value="Doctor 2">Doctor Anggi</option>
-                <option value="Doctor 3">Doctor Oggie</option>
+                <option value="Doctor 1">dr. Zakki</option>
+                <option value="Doctor 2">dr. Anggi</option>
+                <option value="Doctor 3">dr. Oggie</option>
               </select>
               <div class="validate"></div>
             </div>
