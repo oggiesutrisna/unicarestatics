@@ -213,12 +213,11 @@
           <li><a href="#services">Services</a></li>
           <li><a href="#departments">Departments</a></li>
           <li><a href="#doctors">Doctors</a></li>
-          <li><a href="#contact">Contact</a></li>
           <ul>
         </ul>
       </nav><!-- .nav-menu -->
 
-      <a href="#appointment" class="appointment-btn scrollto">Make an Appointment</a>
+      <a href="#contact" class="appointment-btn scrollto">CONTACT NOW!</a>
 
     </div>
 <!-- carousel first try -->
@@ -708,68 +707,7 @@
       </div>
     </section><!-- End Doctors Section -->
 
-    <!-- ======= Frequently Asked Questions Section ======= -->
-    <section id="faq" class="faq section-bg">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Frequently Asked Questions</h2>
-          <p>We've added some FAQ to you.</p>
-        </div>
-
-        <div class="faq-list">
-          <ul>
-            <li data-aos="fade-up">
-              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" class="collapse" href="#faq-list-1">is rapid test included here?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-1" class="collapse show" data-parent=".faq-list">
-                <p>
-                  In our clinic we have already a rapid test. which includes a certification that you clear a non-reactive. The price is eco-friendly. 
-                </p>
-              </div>
-            </li>
-
-            <li data-aos="fade-up" data-aos-delay="100">
-              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-2" class="collapsed">Can we come here and do something that we want? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-2" class="collapse" data-parent=".faq-list">
-                <p>
-                  You can request anything you want, rapid test with a different prices and many more.
-                </p>
-              </div>
-            </li>
-
-            <li data-aos="fade-up" data-aos-delay="200">
-              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-3" class="collapsed">Is rapid test available?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-3" class="collapse" data-parent=".faq-list">
-                <p>
-                  Rapid test is available here, you can make an appointment first then you get called from us.
-                </p>
-              </div>
-            </li>
-
-            <li data-aos="fade-up" data-aos-delay="300">
-              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-4" class="collapsed">Is there any swab test in your clinic <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-4" class="collapse" data-parent=".faq-list">
-                <p>
-                  unfortunately, No. 
-                </p>
-              </div>
-            </li>
-
-            <li data-aos="fade-up" data-aos-delay="400">
-              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-5" class="collapsed">is there any consequences when im not rapid test?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-5" class="collapse" data-parent=".faq-list">
-                <p>
-                  You will need a rapid test to go to anywhere.
-                </p>
-              </div>
-            </li>
-
-          </ul>
-        </div>
-
-      </div>
-    </section><!-- End Frequently Asked Questions Section -->
-
+    
     <!-- ======= Testimonials Section ======= -->
     <section id="testimonials" class="testimonials">
       <div class="container">
@@ -879,15 +817,38 @@
                 <h4>Call:</h4>
                 <p>+62 8228 888 3911 </p>
               </div>
-
             </div>
-
           </div>
-
-          </div>
-
+          <div class="col-lg-8 mt-5 mt-lg-0">
+          <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <div class="form-row">
+              <div class="col-md-6 form-group">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                <div class="validate"></div>
+              </div>
+              <div class="col-md-6 form-group">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                <div class="validate"></div>
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+              <div class="validate"></div>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+              <div class="validate"></div>
+            </div>
+            <div class="mb-3">
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your message has been sent. Thank you!</div>
+            </div>
+            <div class="text-center"><button type="submit">Send Message</button></div>
+          </form>
         </div>
-
+          </div>
+        </div>
       </div>
     </section><!-- End Contact Section -->
 
