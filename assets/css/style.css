@@ -110,7 +110,7 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 #topbar {
   background: #fff;
-  height: 40px;
+  height: 80px;
   font-size: 14px;
   transition: all 0.5s;
 }
@@ -1739,5 +1739,28 @@ section {
 
 /* Others */
 
+.icon-bar { 
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
 
+.icon-bar a { 
+  display: block;
+  text-align: center; 
+  padding: 16px;
+  transition: all 0.3 ease; 
+  color: white; 
+  font-size: 20px;
+}
 
+.icon-bar a:hover { 
+  background-color: #000;
+}
+
+.whatsapp {
+  background: #18d26e;
+  color: green;
+}
