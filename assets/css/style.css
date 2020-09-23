@@ -14,7 +14,7 @@ body {
 }
 
 a {
-  color: #1977cc;
+  color: inherit;
 }
 
 a:hover {
@@ -120,7 +120,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #topbar .contact-info a {
-  line-height: 1;
+  line-height: 0;
   color: #444444;
   transition: 0.3s;
 }
