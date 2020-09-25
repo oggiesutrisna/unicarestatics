@@ -7,14 +7,14 @@
 !(function($) {
   "use strict";
 
-  // Preloader
-  $(window).on('load', function() {
-    if ($('#preloader').length) {
-      $('#preloader').delay(100).fadeOut('slow', function() {
-        $(this).remove();
-      });
-    }
-  });
+  // // Preloader
+  // $(window).on('load', function() {
+  //   if ($('#preloader').length) {
+  //     $('#preloader').delay(100).fadeOut('slow', function() {
+  //       $(this).remove();
+  //     });
+  //   }
+  // });
 
   // Smooth scroll for the navigation menu and links with .scrollto classes
   var scrolltoOffset = $('#header').outerHeight() - 1;
@@ -44,6 +44,10 @@
           $('.mobile-nav-toggle i').toggleClass('icofont-navigation-menu icofont-close');
           $('.mobile-nav-overly').fadeOut();
         }
+
+        if($('whatsapp-icon').hasClass("whatsapp")) { 
+          $('whatsapp-icon').css("display: inherit;");
+         }
         return false;
       }
     }
@@ -86,8 +90,8 @@
   });
 
   // Mobile Navigation
-  if ($('.nav-menu').length) {
-    var $mobile_nav = $('.nav-menu').clone().prop({
+  if ($('.nav-menu, .whatsapp').length) {
+    var $mobile_nav = $('.nav-menu, .whatsapp').clone().prop({
       class: 'mobile-nav d-lg-none'
     });
     $('body').append($mobile_nav);
@@ -116,8 +120,10 @@
         }
       }
     });
-  } else if ($(".mobile-nav, .mobile-nav-toggle").length) {
-    $(".mobile-nav, .mobile-nav-toggle").hide();
+  } else if ($(".mobile-nav, .mobile-nav-toggle, .whatsapp").length) {
+    $(".mobile-nav, .mobile-nav-toggle, .whatsapp").hide();
+     } else if ($(".h2, .i, .whatsapp").length) {
+      $(".h2, .i, .whatsapp").css("display: none;");
   }
   // Toggle .header-scrolled class to #header when page is scrolled
   $(window).scroll(function() {

@@ -1739,12 +1739,24 @@ section {
 
 /* Others */
 
+@media (min-width: 1000px) {
+  .whatsapp-people { 
+    display: none;
+  }
+}
+
+.whatsapp-people { 
+  margin: auto;
+}
+
+
 .icon-bar { 
   position: fixed;
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+  z-index: 99;
 }
 
 .icon-bar a { 
@@ -1759,8 +1771,32 @@ section {
 .icon-bar a:hover { 
   background-color: #000;
 }
-
 .whatsapp {
-  background: #18d26e;
-  color: green;
+  color: #fff;
+}
+.icon-bar { 
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.icon-bar a {
+  display: block;
+  text-align: block;
+  padding: 16px;
+  transition: all 0.3 ease;
+  color: white;
+  font-size: 20px;
+}
+.icon-bar a:hover {
+  background-color: #000;
+}
+.twitter { 
+  background: #55ACEE;
+  color: white;
+}
+.whatsapp { 
+  background: #19ff00;
+  color: white;
 }
